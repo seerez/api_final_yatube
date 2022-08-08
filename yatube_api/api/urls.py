@@ -5,12 +5,12 @@ from .views import CommentsViewSet, FollowViewSet, GroupsViewSet, PostsViewsSet
 
 v1_router = routers.DefaultRouter()
 v1_router.register(
-    r'^posts',
+    'posts',
     PostsViewsSet,
     basename='posts'
 )
 v1_router.register(
-    r'^groups',
+    'groups',
     GroupsViewSet,
     basename='groups'
 )
@@ -20,7 +20,7 @@ v1_router.register(
     basename='comments'
 )
 v1_router.register(
-    r'^follow', FollowViewSet, basename='follow'
+    'follow', FollowViewSet, basename='follow'
 )
 
 urlpatterns = [
